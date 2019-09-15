@@ -40,7 +40,7 @@ public class FavoriteFragment extends Fragment implements TextWatcher {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_favorite, container, false);
-        recyclerView = view.findViewById(R.id.artRecycler);
+        recyclerView = view.findViewById(R.id.favRecycler);
         searchText = view.findViewById(R.id.artSearch);
         layout = view.findViewById(R.id.fragmentContainer);
         return view;

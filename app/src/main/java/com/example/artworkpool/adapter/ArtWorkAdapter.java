@@ -69,7 +69,7 @@ public class ArtWorkAdapter extends RecyclerView.Adapter<ArtWorkAdapter.ArtVH> {
         return myList == null ? 0 : myList.size();
     }
 
-    class ArtVH extends RecyclerView.ViewHolder{
+   public class ArtVH extends RecyclerView.ViewHolder{
 
         private TextView tags;
         private ImageView avatar;
