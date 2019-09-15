@@ -18,6 +18,9 @@ interface ArtDAO {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun addArt2DB(artwork: ArtEntity)
 
+    @Query("SELECT * FROM art_entity WHERE tag =:tag")
+    fun getSearchedArtList(tag: String): LiveData<List<ArtEntity>>
+
     companion object{
 
         fun getArtDao(context: Context):ArtDAO{

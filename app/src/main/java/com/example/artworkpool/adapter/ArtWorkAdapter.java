@@ -24,7 +24,7 @@ import java.util.concurrent.Executors;
 
 public class ArtWorkAdapter extends RecyclerView.Adapter<ArtWorkAdapter.ArtVH> {
 
-    private List<Artwork> myList;
+    public List<Artwork> myList;
 
     public ArtWorkAdapter(List<Artwork> list){
         this.myList = list;
@@ -52,6 +52,7 @@ public class ArtWorkAdapter extends RecyclerView.Adapter<ArtWorkAdapter.ArtVH> {
         holder.tags.setText(work.getTags());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
+
             ArtEntity entity = new ArtEntity(work.getTags(), work.getId(), work.getUser(), work.getUrl());
             @Override
             public void onClick(View view) {
@@ -65,7 +66,7 @@ public class ArtWorkAdapter extends RecyclerView.Adapter<ArtWorkAdapter.ArtVH> {
 
     @Override
     public int getItemCount() {
-        return !myList.isEmpty()? myList.size() : 0;
+        return myList == null ? 0 : myList.size();
     }
 
     class ArtVH extends RecyclerView.ViewHolder{

@@ -19,20 +19,8 @@
         android:paddingEnd="@dimen/margin_dimen"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/searchDone"
-        android:layout_width="0dp"
-        android:layout_height="48dp"/>
-
-    <ImageView
-        android:id="@+id/searchDone"
-        android:src="@drawable/done"
-        android:layout_marginStart="@dimen/margin_dimen"
-        android:layout_marginTop="@dimen/margin_dimen"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/artSearch"
-        android:contentDescription="@null"
-        android:layout_width="48dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"/>
 
     <android.support.v7.widget.RecyclerView

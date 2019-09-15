@@ -6,4 +6,8 @@
     <string name="search_hint">Search for pictures</string>
     <string name="search_toast">The searched text length should be at least 4 characters!</string>
     <string name="error_toast">Something went wrong, please try it later!</string>
+    <string name="snack_toast">Artwork was added to favorites</string>
+    <string name="empty_snack_toast">It looks like there is no match!</string>
+    <string name="snack_undo">Undo</string>
+    <string name="snack_cancel">Cancel</string>
 </resources>
